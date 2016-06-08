@@ -136,6 +136,7 @@ var Swipeout = React.createClass({
       if (posX == 0 && posY == 0) {
          var onPress = this.props.onPress;
          if (onPress) onPress();
+      }
       if (posX < 0 && this.props.right) this.setState({ contentPos: Math.min(posX, 0) })
       else if (posX > 0 && this.props.left) this.setState({ contentPos: Math.max(posX, 0) })
     }
